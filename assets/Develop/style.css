@@ -1,9 +1,11 @@
 *{
     font-family: Arial;
+    box-sizing: border-box;
 }
 
 header{
     display: flex;
+    min-width: 1250px;
     height:75px;
     justify-content: space-between;
     position: fixed;
@@ -21,7 +23,7 @@ header{
 }
 
 nav{
-    margin-right: 70px;
+    margin-right: 55px;
 }
 
 nav a{
@@ -32,16 +34,55 @@ nav a{
 
 .hero-image {
     background-image: url("portfolio_banner.png");
-    height: 50%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:auto;
     position: relative;
-
+    height: 300px;
+    width: 100%;
+    min-width: 1250px;
 }
 
 .hero-text {
     position: absolute;
+    bottom: 20px;
+    right: 50px;
     background-color: rgb(98, 176, 202);
     color:rgb(54, 54, 54);
+    padding: 0px 10px 0px 10px;
+    height:40px;
+    align-items: center;
+    display: flex;
   }
+
+  .row {
+    display: flex;
+    column-count: 2;
+    width:100%;
+    
+}
+  
+  .column1{
+
+    font-size: 35px;
+    column-width: 500px;
+    text-align: right;
+    background-color: rgb(98, 176, 202);
+    color:rgb(54, 54, 54);
+    padding: 20px 10px 50px 10px;
+    flex-flow: column;
+
+
+    
+
+  }
+
+  .column2{
+    background-color: rgb(54, 54, 54);
+    color:rgb(98, 176, 202);
+    padding: 20px 10px 50px 35px;
+    flex-flow: column;
+    
+  }
+  
+  
