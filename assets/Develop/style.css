@@ -34,8 +34,8 @@ nav a{
 
 .box{
     float:left;
-    width:100%;
-    display:flex;
+    width:50%;
+    display:flexbox;
 }
 
 .hero-image {
@@ -61,6 +61,8 @@ nav a{
     min-width: 830px;
     min-height: 300px;
     border: 4px solid rgb(98, 176, 202);
+    columns: 1;
+    
 }
 
 .image2{
@@ -119,48 +121,70 @@ nav a{
     height:40px;
     align-items: center;
     display: flex;
-  }
+}
 
-  #table{
-      column-count: 2;
-      display: flex;
-  }
 
-  .projectText{
-    position: absolute;
+.projectText1{
+    position: relative;
     background-color: rgb(98, 176, 202);
     color:rgb(54, 54, 54);
     padding: 0px 10px 0px 10px;
     height:40px;
     align-items: center;
-    display: flex;
-    bottom: -225px;
+    display: inline-flex;
+    bottom: 70px;
 
-  }
+}
 
-  .projectText2{
-    position: absolute;
+.projectText2{
+    position: relative;
     background-color: rgb(98, 176, 202);
     color:rgb(54, 54, 54);
     padding: 0px 10px 0px 10px;
     height:40px;
     align-items: center;
-    display: flex;
-    column-count: 2;
-  }
+    display: inline-flex;
+    bottom: 70px;
 
-  .projectText3{
-    position: absolute;
+}
+
+.projectText3{
+    position: relative;
     background-color: rgb(98, 176, 202);
     color:rgb(54, 54, 54);
     padding: 0px 10px 0px 10px;
     height:40px;
     align-items: center;
-    display: flex;
-    column-count: 2;
-  }
+    display: inline-flex;
+    bottom: 70px;
 
-  .row1 {
+}
+
+.projectText4{
+    position: relative;
+    background-color: rgb(98, 176, 202);
+    color:rgb(54, 54, 54);
+    padding: 0px 10px 0px 10px;
+    height:40px;
+    align-items: center;
+    display: inline-flex;
+    bottom: 70px;
+
+}
+
+.projectText5{
+    position: relative;
+    background-color: rgb(98, 176, 202);
+    color:rgb(54, 54, 54);
+    padding: 0px 10px 0px 10px;
+    height:40px;
+    align-items: center;
+    display: inline-flex;
+    bottom: 70px;
+
+}
+
+.row1 {
     display: flex;
     column-count: 2;
     width:100%;
@@ -182,7 +206,7 @@ nav a{
     
 }
   
-  .column1{
+.column1{
 
     font-size: 35px;
     column-width: 500px;
@@ -198,9 +222,9 @@ nav a{
 
     
 
-  }
+}
 
-  .column2{
+.column2{
     background-color: rgb(54, 54, 54);
     color:rgb(98, 176, 202);
     padding: 20px 10px 50px 35px;
@@ -208,13 +232,13 @@ nav a{
     width:100%;
     min-width: 907px;
     
-  }
+}
   
   
-  .contactList{
-      list-style-type: none;
-      display: flex;
-      justify-content:space-evenly;
-      align-items: center;
-      text-decoration: underline;
-    }
+.contactList{
+    list-style-type: none;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    text-decoration: underline;
+}
