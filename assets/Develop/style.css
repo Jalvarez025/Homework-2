@@ -8,7 +8,7 @@ header{
     min-width: 1250px;
     height:75px;
     justify-content: space-between;
-    position: fixed;
+    position:relative;
     width: 100%;
     align-items: baseline;
     background-color: rgb(54, 54, 54);
@@ -41,6 +41,7 @@ nav a{
     height: 300px;
     width: 100%;
     min-width: 1250px;
+    min-height: 300px;
 }
 
 .hero-text {
@@ -55,10 +56,25 @@ nav a{
     display: flex;
   }
 
-  .row {
+  .row1 {
     display: flex;
     column-count: 2;
     width:100%;
+    
+}
+
+.row2 {
+    display: flex;
+    column-count: 2;
+    width:100%;
+    
+}
+
+.row3 {
+    display: flex;
+    column-count: 2;
+    width:100%;
+    height: min-content;
     
 }
   
@@ -71,7 +87,9 @@ nav a{
     color:rgb(54, 54, 54);
     padding: 20px 10px 50px 10px;
     flex-flow: column;
-
+    border-right: 5px solid white;
+    top:10%;
+    bottom: 0;
 
     
 
@@ -82,7 +100,11 @@ nav a{
     color:rgb(98, 176, 202);
     padding: 20px 10px 50px 35px;
     flex-flow: column;
+    width:100%;
     
   }
   
-  
+  h3{
+      display: inline;
+      justify-content: space-evenly;
+  }
