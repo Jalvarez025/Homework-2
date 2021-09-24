@@ -4,15 +4,14 @@
 }
 
 header{
-    display: flex;
-    min-width: 1250px;
+    display: inline-flex;
     height:75px;
     justify-content: space-between;
     position:relative;
     width: 100%;
+    min-width: 720px;
     align-items: baseline;
     background-color: rgb(54, 54, 54);
-    
 }
 
 .name{
@@ -22,20 +21,31 @@ header{
     padding: 0px 10px 0px 60px;
 }
 
-nav{
+ul{
     margin-right: 55px;
+}
+
+li{
+    display: inline;
 }
 
 nav a{
     color:rgb(98, 176, 202);
     font-size: 19px;
-    
 }
 
 .box{
-    float:left;
-    width:50%;
-    display:flexbox;
+    display: flexbox;
+    width:100%;
+    padding-right: 15px;
+    columns: 2;
+    flex-wrap: nowrap;
+}
+
+.box0{
+    display: flexbox;
+    width:100%;
+    padding-right: 15px;
 }
 
 .hero-image {
@@ -44,71 +54,8 @@ nav a{
     background-repeat: no-repeat;
     background-size:auto;
     position: relative;
-    height: 300px;
-    width: 100%;
-    min-width: 1250px;
+    min-width: 100%;
     min-height: 300px;
-}
-
-.image1{
-    background-image: url("portfolio_pic3.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    position: relative;
-    height: 300px;
-    width: 100%;
-    min-width: 830px;
-    min-height: 300px;
-    border: 4px solid rgb(98, 176, 202);
-    columns: 1;
-    
-}
-
-.image2{
-    background-image: url("portfolio_pic1.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    position: relative;
-    height: 300px;
-    width: 100%;
-    border: 4px solid rgb(98, 176, 202);
-}
-
-.image3{
-    background-image: url("portfolio_pic2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    position: relative;
-    height: 300px;
-    width: 100%;
-    border: 4px solid rgb(98, 176, 202);
-
-}
-
-.image4{
-    background-image: url("portfolio_pic4.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    position: relative;
-    height: 300px;
-    width: 100%;
-    border: 4px solid rgb(98, 176, 202);
-}
-
-.image5{
-    background-image: url("portfolio_pic5.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    position: relative;
-    height: 300px;
-    width: 100%;
-    border: 4px solid rgb(98, 176, 202);
-
 }
 
 .hero-text {
@@ -123,6 +70,39 @@ nav a{
     display: flex;
 }
 
+.column1{
+
+    font-size: 35px;
+    text-align: right;
+    background-color: rgb(98, 176, 202);
+    color:rgb(54, 54, 54);
+    padding: 20px 10px 50px 10px;
+    flex-flow: column;
+    border-right: 5px solid white;
+    top:10%;
+    bottom: 0;
+    min-width: 25%;
+    display: flexbox;
+}
+
+.column2{
+    background-color: rgb(54, 54, 54);
+    color:rgb(98, 176, 202);
+    padding: 20px 10px 50px 35px;
+    min-width:75%;
+    display: flexbox;
+}
+
+.image1{
+    background-image: url("portfolio_pic3.jpg");
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    height: 300px;
+    min-width: 100%;
+    min-height: 300px;
+    border: 4px solid rgb(98, 176, 202);
+}
 
 .projectText1{
     position: relative;
@@ -133,7 +113,16 @@ nav a{
     align-items: center;
     display: inline-flex;
     bottom: 70px;
+}
 
+.image2{
+    background-image: url("portfolio_pic1.jpg");
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    height: 300px;
+    min-width: 100%;
+    border: 4px solid rgb(98, 176, 202);
 }
 
 .projectText2{
@@ -145,7 +134,16 @@ nav a{
     align-items: center;
     display: inline-flex;
     bottom: 70px;
+}
 
+.image3{
+    background-image: url("portfolio_pic2.jpg");
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    height: 300px;
+    min-width: 100%;
+    border: 4px solid rgb(98, 176, 202);
 }
 
 .projectText3{
@@ -157,7 +155,16 @@ nav a{
     align-items: center;
     display: inline-flex;
     bottom: 70px;
+}
 
+.image4{
+    background-image: url("portfolio_pic4.png");
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    height: 300px;
+    min-width: 100%;
+    border: 4px solid rgb(98, 176, 202);
 }
 
 .projectText4{
@@ -169,7 +176,16 @@ nav a{
     align-items: center;
     display: inline-flex;
     bottom: 70px;
+}
 
+.image5{
+    background-image: url("portfolio_pic5.png");
+    background-position: center;
+    background-size:cover;
+    position: relative;
+    height: 300px;
+    min-width: 100%;
+    border: 4px solid rgb(98, 176, 202);
 }
 
 .projectText5{
@@ -181,21 +197,17 @@ nav a{
     align-items: center;
     display: inline-flex;
     bottom: 70px;
-
 }
 
 .row1 {
     display: flex;
     column-count: 2;
     width:100%;
-    
 }
 
 .row2 {
     display: flex;
-    column-count: 2;
-    width:100%;
-    
+    width: 100%;
 }
 
 .row3 {
@@ -203,37 +215,7 @@ nav a{
     column-count: 2;
     width:100%;
     height: min-content;
-    
 }
-  
-.column1{
-
-    font-size: 35px;
-    column-width: 500px;
-    text-align: right;
-    background-color: rgb(98, 176, 202);
-    color:rgb(54, 54, 54);
-    padding: 20px 10px 50px 10px;
-    flex-flow: column;
-    border-right: 5px solid white;
-    top:10%;
-    bottom: 0;
-    min-width: 370px;
-
-    
-
-}
-
-.column2{
-    background-color: rgb(54, 54, 54);
-    color:rgb(98, 176, 202);
-    padding: 20px 10px 50px 35px;
-    flex-flow: column;
-    width:100%;
-    min-width: 907px;
-    
-}
-  
   
 .contactList{
     list-style-type: none;
