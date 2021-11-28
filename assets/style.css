@@ -1,6 +1,7 @@
 *{
     font-family: Arial;
     box-sizing: border-box;
+    width: fit-content;
 }
 
 header{
