@@ -38,7 +38,6 @@ nav a{
     display: flexbox;
     width:100%;
     padding-right: 15px;
-    columns: 2;
     flex-wrap: nowrap;
 }
 
@@ -56,6 +55,7 @@ nav a{
     position: relative;
     min-width: 100%;
     min-height: 300px;
+    display: inline-block;
 }
 
 .hero-text {
@@ -82,7 +82,7 @@ nav a{
     top:10%;
     bottom: 0;
     min-width: 25%;
-    display: flexbox;
+    display: flex;
 }
 
 .column2{
